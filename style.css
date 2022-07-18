@@ -1,0 +1,318 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-family: "Roboto", "SF Pro text", "Microsoft JhengHei",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 24px;
+  line-height: 1.75;
+  font-style: italic;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CSS Style start.. */
+:root {
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --border-color: #707070;
+  --dot-color: #891818;
+}
+
+.container {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 1.3125;
+}
+
+.title-details {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* banner */
+.banner {
+  background: url('./img/banner.png') center / cover;
+  padding-top: 308px;
+  padding-bottom: 308px;
+  color: var(--white-color);
+}
+
+.banner-content {
+  max-width: 304px;
+  text-align: left;
+}
+
+.banner span {
+  display: block;
+}
+
+.banner h1 {
+  font-size: 80px;
+  line-height: 1.325;
+}
+
+.banner ul {
+  display: flex;
+  justify-content: center;
+}
+
+.banner ul li:hover {
+  transform: translateY(2px);
+}
+
+/* about */
+.about {
+  color: var(--black-color);
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+hr {
+  display: inline-block;
+  width: 384px;
+  border: 1px solid var(--black-color);
+}
+
+.about-list li::before {
+  content: " ";
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--dot-color);
+}
+
+/* brand */
+.brand {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: 1px solid var(--border-color);
+  padding-top: 56px;
+  padding-bottom: 160px;
+}
+
+.brand-pics,
+.other-pics {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  line-height: 2.1;
+}
+
+/* footer */
+footer {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+footer li a:link {
+  color: var(--white-color);
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
+
+/* margin setting */
+.mx-auto {
+  margin: 0 auto;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-56 {
+  margin-bottom: 56px;
+}
+
+.mb-68 {
+  margin-bottom: 68px;
+}
+
+.mb-144 {
+  margin-bottom: 144px;
+}
+
+/* font-weight */
+.fw-m {
+  font-weight: 500;
+}
+
+.fw-b {
+  font-weight: 700;
+}
+
+.fw-bb {
+  font-weight: 900;
+}
+
+/* line-height  */
+.lh-15 {
+  line-height: 1.5;
+}
